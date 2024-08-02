@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face{
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+@font-face{
+    font-family: 'Space Grotesk';
+    src: url(../police/SpaceGrotesk-Medium.otf);
+}
+html {
+	scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+:root{
+    --yellow-color: #FFFF00; 
+    --yellow-light:#F8F184;
+    --blue-color  : #19587D;
+    --white-color : #fff; 
+    --gradient-white: #eddebf67;
+    --gradiant-red: #89000978;
+    --black-color: #000; 
+    --grey-color:#C4C4C4; 
+    --gradient-blue : #19587D;    
+}
+@keyframes fadeInRight {
+    0% {
+        opacity:0;
+        transform: translateX(-1000px); scale: (0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); scale: (1);
+    }
+
+}
+.tittre1{
+    -webkit-animation: fadeInRight 1500ms ease-in-out;
+    animation: fadeInRight 1500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Rajdhani Medium';
+    letter-spacing: 2px;
+    margin-top: 250px;
+    margin-left: 200px;
+    text-transform: uppercase;
+}
+#hero .flêche{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 450px;
+}
+.tittre2{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Rajdhani Medium';
+    letter-spacing: 2px;
+    margin-top: 150px;
+    margin-left: 350px;
+    text-transform: uppercase;
+}
+.Batgame_2{
+    position: relative;
+    margin-top: 230px;
+    margin-left: 220px;
+}
+.btn a{
+    text-transform: uppercase;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Rajdhani Medium';
+    text-align: center;
+    letter-spacing: 2px;
+    background: linear-gradient(80deg, rgb(63, 63, 63), rgb(202, 123, 45));
+    left: 550px;
+    top: 150px;
+}
+#hero{
+    background-image: url(../Illustrations-2/Batgame_1.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-color: #19587D;
+    background-size: cover;
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Space Grotesk';
+    font-weight: 300;   
+}
+body {
+    animation: fadein 4s; 
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keframes slidein{
+    from{
+        margin-right: 100%;
+        width: -300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: -100%;
+    }
+}
+.up-bar{
+    border-top: #BCBBBD 3px solid;
+    position: relative;
+    top: 140px;
+    width: 82.6%;
+    left: 121px;
+    opacity: 15%;
+}
+.right-bar{
+    background-color: #BCBBBD;
+    height: 2350px;
+    width: 3px;
+    position: absolute;
+    top: -1px;
+    left: 120px;
+    opacity: 15%;
+}
+.left-bar{
+    background-color: #BCBBBD;
+    height: 2350px;
+    width: 3px;
+    position: absolute;
+    top: -1px;
+    left: 1230px;
+    opacity: 15%;
+}
+nav ul li:{
+    font-weight : bold;
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul{
+
+    list-style-type: none;
+}
+.home{
+    text-decoration: none;
+}
+.home:hover{
+   
+    text-decoration: underline;
+}
+.games{
+    text-decoration: none;
+}
+.games:hover{
+   
+    text-decoration: underline;
+}
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+                    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+}
+.scroll .social:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+                    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+}
+.social-footer .social:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%)
+}
+.icon_WB:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%)
+}
+.bas{
+    position: relative;
+    bottom: 450px;
+    opacity: 0;
+}
+.scroll{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 63px;
+    top: 218px;
+}
+.scroll .social{
+    margin-top: 30px;
+}
+footer{
+    margin-top: 1100px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 60px;
+    padding-left: 20px;
+
+}
+footer .social-item{
+    padding: 20px;
+}
+.iconWB{
+    color: #aeaeae;
+}
+.icon_WB{
+    position: absolute;
+    top: 2135px;
+    left: 395px;
+}
+.bat{
+    height: 135px;
+    width: 165px;
+    position: absolute;
+    top: 1895px;
+    left:230px;
+}

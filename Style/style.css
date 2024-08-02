@@ -1,0 +1,805 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face{
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Space Grotesk';
+    src: url(../police/SpaceGrotesk-Medium.otf);
+}
+
+
+
+:root{
+    --yellow-color: #FFFF00; 
+    --yellow-light:#F8F184;
+    --blue-color  : #19587D;
+    --white-color : #fff; 
+    --gradient-white: #eddebf67;
+    --gradiant-red: #89000978;
+    --black-color: #000; 
+    --grey-color:#C4C4C4; 
+    --gradient-blue : #19587D;    
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    
+    100% {
+        opacity:1;
+    }
+} }
+
+#hero{
+    background-image: url(../illustrations/bathome1.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-color: #19587D;
+    background-size: cover;
+}
+
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Space Grotesk';
+    font-weight: 300;   
+}
+
+body {
+    animation: fadein 4s; 
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity:0;
+        transform: translateX(-1000px); scale: (0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); scale: (1);
+    }
+
+}
+.content{
+    
+    -webkit-animation: fadeInRight 1500ms ease-in-out;
+    animation: fadeInRight 1500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+
+.up-bar{
+    border-top: #BCBBBD 3px solid;
+    position: relative;
+    top: 132px;
+    left: 102px;
+    width: 85%;
+    left: 102px;
+    opacity: 15%;
+}
+
+.right-bar{
+    background-color: #BCBBBD;
+    height: 7492px;
+    width: 3px;
+    position: absolute;
+    top: -1px;
+    left: 99px;
+    opacity: 15%;
+}
+
+.left-bar{
+    background-color: #BCBBBD;
+    height: 7492px;
+    width: 3px;
+    position: absolute;
+    top: -1px;
+    left: 1249px;
+    opacity: 15%;
+}
+
+
+nav ul li:{
+    font-weight : bold;
+}
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+.home{
+    text-decoration: none;
+}
+
+.home:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.games{
+    text-decoration: none;
+}
+
+.games:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+
+
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+                    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+}
+
+.scroll .social:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+                    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+}
+
+.ICon-footer .ICon:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%)
+}
+
+.icon_WB:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%) contrast(104%);
+    invert(4%) sepia(100%) saturate(5414%) hue-rotate(358deg) brightness(104%)
+}
+
+
+
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 270px;
+}
+
+.content .texte{
+    font-size: 20px;
+}
+
+#hero .titre{
+    margin: 20px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradiant-red));
+}
+
+.btn:hover{
+    background: linear-gradient(80deg, white, red);
+}
+
+
+
+#hero .flêche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 295px;
+}
+
+.scroll{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 46px;
+    top: 218px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+#batman-cinema .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 90%;
+    color: #C4C4C4;
+    font-size: 21px;
+    
+}
+#batman-cinema .personnage-info{
+    text-align: center;
+}
+
+#batman-cinema{
+    margin-top: 1px;
+}
+.batman-personnages{
+    display: flex;
+    justify-content: space-between ;
+}
+
+#nemesis .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#nemesis .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 90%;
+    color: #C4C4C4;
+    font-size: 21px;
+}
+#nemesis .personnage-info{
+    text-align: center;
+}
+
+#nemesis{
+    margin-top: 1px;
+}
+.nemesis-personnages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Bathome12{
+    position: absolute;
+    left: 920px;
+    top: 2600px;
+}
+
+#alliés .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#alliés .description{
+    margin-bottom: 60px;
+    text-align: justify;
+    width: 95%;
+    color: #C4C4C4;
+    font-size: 21px;
+}
+#alliés .personnage-info{
+    text-align: center;
+}
+
+#alliés{
+    margin-top: 1px;
+}
+.alliés-personnages{
+    display: flex;
+    justify-content: space-between;
+}
+
+#justice-league{
+    margin-top: 40px;
+}
+
+#justice-league .title1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+    margin-left: 50px;
+}
+
+#justice-league .description1{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 90%;
+    color: #C4C4C4;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-left: 50px;
+    }
+
+.Bathome14{
+    position: relative;
+}
+
+    #multimedia button.right{
+        right: -90%;
+    }
+
+    #multimedia button{
+        position: relative;
+        top: 170px;
+        background: none;
+        border: none;
+    }
+
+    #multimedia .slider-multimedia{
+        display: flex;
+        width: 60%;
+        margin: 40px auto;
+
+    }
+
+    #multimedia .slider-image{
+        position: relative;
+        left: 38px;
+        bottom: 15px;
+    }
+
+    #multimedia .slider-content{
+        padding: 15px;
+        background: linear-gradient(120deg,#484949, #021723);
+        height: 220px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        left: 38px;
+        bottom: 15px;
+    }
+    .ACTION{
+        font-family: 'Rajdhani Medium';
+        font-size: 13px;
+        letter-spacing: 4px;
+        margin-left: 2px;
+        padding: 3px;
+    }
+
+    .Begins{
+        font-family: 'Rajdhani Light';
+        font-size: 16px;
+        padding: 3px;
+    }
+
+    .IMDB{
+        font-family: 'Rajdhani Medium';
+        font-size: 18px;
+        padding: 3px;
+    }
+
+    .jeune{
+        font-size: 12px;
+        margin-left: 3px;
+    }
+
+   
+
+    .fleche{
+        position: relative;
+        top: 40px;
+    }
+
+    .right{
+        cursor: pointer;
+    }
+
+    .left{
+        cursor: pointer;
+    }
+
+    .t1{
+        border: 2px solid white;
+    }
+    #multimedia .yellow{
+        color: var(--yellow-color);
+    }
+
+    .Bathome_ba2:hover {
+        box-shadow: 0px 0px 20px 8px white;
+    }
+
+    .icon_player{
+        position: absolute;
+        top: 5247px;
+        left: 610px;
+    }
+
+    .icon_player:hover{
+        opacity: 0;
+    }
+
+    #Formulaire{
+        position: relative;
+        background: linear-gradient(90deg,#2c2d2d, #021723);
+        padding: 70px 0;
+    }
+
+    #Formulaire .form{
+        position: relative;
+        bottom: 15px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #Formulaire h2{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 32px;
+
+    }
+
+    #Formulaire .titre{
+        display: block;
+        margin: 28px 0;
+    }
+
+    #Formulaire .form input[type='email'], input{
+        color: #ffffff;
+        display: block;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(119, 119, 119);
+        background-color: transparent;
+        padding-top: 10px 0;
+        
+    }
+
+    input::placeholder{
+        color: rgb(119, 119, 119);
+        font-family: 'space grotesk';
+    }
+    
+
+    .cochant{
+        color:rgb(119, 119, 119) ;
+        font-size: 15px;
+    }
+
+
+.checkbox{
+    position: relative;
+    right: 254px;
+    bottom: 14px;
+}
+
+
+
+    #Formulaire .icon img{
+        transform: rotate(90deg);
+        width: 20px;
+        position: relative;
+        bottom: 30px;
+        left: 640px;
+    }
+
+    #Formulaire .news{
+        margin: 15px 0;
+        border-bottom: 2px solid rgb(120, 120, 120);
+    }
+
+    ::-webkit-input-placeholder{
+        color: #F8F184;
+        font-size: 15px;
+    }
+
+    ::-moz-placeholder{
+        color: #F8F184;
+        font-size: 15px;
+
+    }
+
+    ::-ms-input-placeholder{
+        color: #F8F184;
+        font-size: 15px;
+
+    }
+
+    ::-ms-input-placeholder{
+        color: #F8F184;
+        font-size: 15px;
+        
+    }
+
+    ::placeholder{
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .btn-group{
+        position: relative;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        right: 35px;
+    }
+
+    .form input[type='radio']{
+        opacity: 0;
+        width: 1%;
+        height: 1%;
+    }
+
+    .btn-group label{
+        cursor: pointer;
+        padding: 12px;
+        border: 1px solid;
+        border-color: rgb(255, 255, 255);
+        font-size: 15px;
+     }
+
+     .btn-group label:hover{
+        background: linear-gradient(95deg,#ffffff5a, #043332);
+     }
+
+    input[type='submit']{
+        position: relative;
+        font-family: rajdhani;
+        font-size: 20px;
+        border: none;
+        display: block;
+        width: 238px;
+        margin: 25px auto;
+        padding: 15px 0;
+        cursor: pointer;
+        background: linear-gradient(90deg,#eddebf5a, #89000977);
+        top: 40px;
+    }
+
+    input[type='submit']:hover{
+        background: linear-gradient(90deg,#eddebf, #890009);
+    }
+
+.icon_guillemets_1{
+    position: absolute;
+    top: 6650px;
+    left: 270px;
+}
+
+#Bat-citations{
+    margin: 90px;
+
+}
+#Bat-citations .citation-class{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+#Bat-citations .citation-down-text{
+    line-height: 30px;
+    font-size: 12px;
+    padding-top: 20px;
+    font-family: 'space grotesk';
+    color: #aeaeae;   
+}
+
+#Bat-citations .-close{
+    float: right;
+}
+
+.citation-text{
+    line-height: 30px;
+}
+
+.icon_guillemets_2{
+    position: absolute;
+    top: 6850px;
+    left: 990px;
+}
+
+
+footer{
+    margin-top: 162px;
+}
+footer .foot-texte{
+    text-align: center;
+    font-size: 14px;
+}
+footer .ICon-footer{
+    text-align: center;
+    margin: 50px ;
+
+}
+footer .ICon-item{
+    padding: 20px;
+}
+
+
+.ico-WB{
+    color: #aeaeae;
+}
+
+.icon_WB{
+    position: absolute;
+    top: 7220px;
+    left: 390px;
+}
+    
+.bat{
+    height: 135px;
+    width: 165px;
+    position: absolute;
+    top: 1850px;
+    left:250px;
+
+}
+.batman-personnages img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.batman-personnages :hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* 1er partie */
+.hover1{
+    position: absolute;
+    left: 168px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover1:hover{
+    opacity: 100%;
+}
+
+
+.hover2{
+    position: absolute;
+    left: 512px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover2:hover{
+    opacity: 100%;
+}
+
+.hover3{
+    position: absolute;
+    left: 870px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover3:hover{
+    opacity: 100%;
+}
+
+/* 2em partie */
+
+.hover4{
+    position: absolute;
+    left: 160px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover4:hover{
+    opacity: 100%;
+}
+
+.hover5{
+    position: absolute;
+    left: 512px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover5:hover{
+    opacity: 100%;
+}
+
+.hover6{
+    position: absolute;
+    left: 870px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover6:hover{
+    opacity: 100%;
+}
+
+/* 3em partie */
+
+
+.hover7{
+    position: absolute;
+    left: 170px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover7:hover{
+    opacity: 100%;
+}
+
+.hover8{
+    position: absolute;
+    left: 512px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover8:hover{
+    opacity: 100%;
+}
+
+.hover9{
+    position: absolute;
+    left: 870px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.hover9:hover{
+    opacity: 100%;
+}

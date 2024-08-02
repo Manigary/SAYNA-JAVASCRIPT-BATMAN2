@@ -1,0 +1,92 @@
+var questions =[{
+	"question": "Quel est l’autre nom de l’Homme-Mystère ?",
+	"option1": "Le Sphinx ",
+	"option2": "Saphir",
+	"option3": "Le Joker",
+	"answer": "1",
+}, {
+	"question": "Quelle est l’ancienne profession de Harley Quinn ?",
+	"option1": "Infirmière",
+	"option2": "Psychiatre",
+	"option3": "Dentiste",
+	"answer": "2",
+}, {
+	"question": "Quel est l’objet fétiche de Double Face ?",
+	"option1": "Une pièce",
+	"option2": "Un livre",
+	"option3": "Un couteau",
+	"answer": "1",
+}, {
+	"question": "Qui a produit Batman en 1964 ?",
+	"option1": " Stanley Kubrick",
+	"option2": "Andy Warhol",
+	"option3": "Leslie H. Martinson",
+	"answer": "3",
+}, {
+	"question": "Batman c’est aussi le nom d’une ville en...?",
+	"option1": "Turquie",
+	"option2": "Islande",
+	"option3": "Allemagne",
+	"answer": "1",
+}, {
+	"question": "Quel vilain apparaît pour la première fois dans le Batman 232 ?",
+	"option1": "Le Pingouin",
+	"option2": "Ra’s al Ghul",
+	"option3": "Poison Ivy",
+	"answer": "2",
+}, {
+	"question": "Quelle ville Batman défend-il ?",
+	"option1": "Gotham City",
+	"option2": "Starling City",
+	"option3": "Hell’s Kitchen",
+	"answer": "1",
+}, {
+	"question": "Tim Burtin a réalisé deux Batman, qui jouait Batman ?",
+	"option1": "Georges Clooney",
+	"option2": "Val Kilmer",
+	"option3": "Mickael Keaton",
+	"answer": "3",
+}, {
+	"question": "Dans son premier Batman (1989) Jack Nicholson jouait :",
+	"option1": "Le Pingouin",
+	"option2": "L’Homme Mystère",
+	"option3": "Le Joker",
+	"answer": "2",
+}, {
+	"question": "Qui est Jonathan Crane ? ",
+	"option1": "L Épouvantail",
+	"option2": "Le Joker",
+	"option3": "Hugo Strange",
+	"answer": "1",
+}, {
+	"question": "Qui est l’interprète de Catwoman dans le nouveau  Batman de Matt Reeves (2022) ?",
+	"option1": "Emma Watson",
+	"option2": "Gigi Hadid",
+	"option3": "Zoë Kravitz",
+	"answer": "3",
+}, {
+	"question": "Quel est le prénom des parents du jeune Bruce Wayne ? ",
+	"option1": "Thomas et Martha",
+	"option2": "Elaine et Georges",
+	"option3": "Martha et James ",
+	"answer": "2",
+}, {
+	"question": "Qui interprète le Joker en 2008 ?",
+	"option1": "Heath Legder",
+	"option2": "Haeth Ledger",
+	"option3": "Heath Ledger",
+	"answer": "3",
+}, {
+	"question": "En quelle année Robin fait il sa première apparition ?",
+	"option1": "1940",
+	"option2": "1936",
+	"option3": "1941",
+	"answer": "1",
+}, {
+	"question": "Qui est la fille de Batman et Catwoman (Earth - 2) ?",
+	"option1": "Oracle",
+	"option2": "Huntress",
+	"option3": "Black Canary",
+	"answer": "2",
+}
+];

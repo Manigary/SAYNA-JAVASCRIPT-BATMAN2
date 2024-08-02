@@ -1,0 +1,32 @@
+
+div#galerie {
+    position: relative;
+    margin-top: 150px;
+    margin-left: -190px;
+    height: 310px;
+    width: 310px;
+    }
+  
+  ul#galerie_mini {
+    list-style-type: none ;}
+  
+  
+  ul#nav {
+    list-style-type: none ;}
+  
+
+  #toto{
+    position: relative;
+    text-align: center;
+    right: 100px;
+    color: white ;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  #big_pict{
+    cursor: progress;
+  }
+
+
+  
